@@ -1,7 +1,6 @@
-
 # example test code
 def test():
-    from chitchat import message
+    from streamlit_chitchat import message
     import time
     message('hello', is_user=True, avatar='fun-emoji', seed=100)
     bot = message('hello as well', is_user=False, avatar='bottts', seed=100)
