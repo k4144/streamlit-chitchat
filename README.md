@@ -1,13 +1,52 @@
-# A simple streamlit add-on
+<br>
 
-![Python Logo](https://www.python.org/static/community_logos/python-logo.png "Sample inline image")
-this module allows you to display chat messages in streamlit, aligned right or left and displaying an avatar image of your choosing.
+  
 
-example use:
+<img  src="https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b011-7b4c59488c91.png"  alt="Streamlit logo"  style="margin-top:50px"></img>
 
-from streamlit_chitchat import message
+  
 
-user=message('hello', is_user=True)
-user.write('sorry, I meant to say goodbye')
+# streamlit-chitchat
 
-[The source for this project is available here][src].
+  
+
+**make chat messages easier to style in streamlit**
+
+  
+
+streamlit-chitchat lets you style messages from the user and responses from a bot differently. you can also update an existing message, so that streamed tokens render as they are received. 
+
+
+  
+
+## Installation
+
+  
+
+Open a terminal and run:
+
+  
+
+```bash
+
+$  pip  install  streamlit-chitchat
+
+```
+
+## example use
+  
+
+in your streamlit app, insert:
+
+  
+
+```bash
+
+from streamlit-chitchat.chitchat import message
+message('hello, how are you?', is_user=True)
+bot=message()
+for w in 'excellent! have any plans for tonight?'.split(' '):
+	bot.write(w+' ')
+```
+
+
