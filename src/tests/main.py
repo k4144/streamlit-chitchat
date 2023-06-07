@@ -1,6 +1,8 @@
+from src.streamlit_chitchat.chitchat import message
+
+
 # example test code
 def test():
-    from streamlit_chitchat import message
     import time
     message('hello', is_user=True, avatar='fun-emoji', seed=100)
     bot = message('hello as well', is_user=False, avatar='bottts', seed=100)
@@ -21,4 +23,3 @@ def test():
 
 if __name__ == '__main__':
     test()
-
