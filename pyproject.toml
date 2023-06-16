@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "streamlit-chitchat"
-version = "0.1.4"
+version = "0.1.5"
 description = ""
-authors = ["k4144 <you@example.com>"]
+authors = ["k4144 <github.k4144@gmail.com>"]
 readme = "README.md"
 packages = [{include = "streamlit_chitchat"}]
 
@@ -15,9 +15,9 @@ build-backend = "poetry.core.masonry.api"
 
 [metadata]
 name = 'streamlit-chitchat'
-version = '0.1.0'
+version = '0.1.4'
 author = 'k4144'
-author_email = 'your_email@example.com'
+author_email = 'github.k4144@gmail.com'
 description = 'simple streamlit helper'
 long_description = ['file: README.md', 'LICENSE.txt']
 long_description_content_type = 'text/markdown'
