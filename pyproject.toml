@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "streamlit-chitchat"
-version = "0.1.5"
+version = "0.1.7"
 description = ""
 authors = ["k4144 <github.k4144@gmail.com>"]
 readme = "README.md"

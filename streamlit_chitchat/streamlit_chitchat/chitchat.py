@@ -60,7 +60,7 @@ class message:
     def _message(self, text):
         h1 = t1 if self.is_user else t2
         width = f'width:{self.width};'  # max-width
-        height = f'height:{self.height};'
+        height = f'min-height:{self.height};'
         font = f'font-family: {self.font};'  # 'font-family: Geneva, Verdana, sans-serif;'
         font_size = f'font-size: {self.font_size};'
         color = f'color:{self.color};'

@@ -30,7 +30,7 @@ def test2():
         # image file
         st.write('\n')
         st.write('\nimage file')
-        message('hello', is_user=True, avatar='images/man.png', background='lightgreen')
+        message('hello ', is_user=True, avatar='images/man.png', background='lightgreen')
         # default avatar (different for bot and user)
         st.write('\n')
         st.write('\ndefault')
@@ -72,5 +72,5 @@ def test2():
 
 
 if __name__ == '__main__':
-    #test1()
+    test1()
     test2()

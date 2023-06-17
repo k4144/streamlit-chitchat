@@ -1,5 +1,13 @@
 import base64
-import cv2
+try:
+    import cv2
+    pass
+except ImportError:
+    print(f'user warning: cannot import cv2. cant use local image files')
+    pass
+except ImportWarning as e:
+    print(f'user warning when importing cv2: {e}\n it may be impossible to use local image files')
+    pass
 import re
 
 
@@ -10,6 +18,7 @@ def encode_image(image, ext='jpg'):
         return base64.b64encode(cv2.imencode(f'.{ext}', cv2.imread(image))[1]).decode('utf-8')
     except Exception as e:
         print('image error:', e)
+        print('remove "avatar" parameter from message instantiation to remove this error')
         return ''
 
 
